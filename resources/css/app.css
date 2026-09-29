@@ -11,17 +11,16 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-    --color-zinc-50: #fafafa;
-    --color-zinc-100: #f5f5f5;
-    --color-zinc-200: #e5e5e5;
-    --color-zinc-300: #d4d4d4;
-    --color-zinc-400: #a3a3a3;
-    --color-zinc-500: #737373;
-    --color-zinc-600: #525252;
-    --color-zinc-700: #404040;
-    --color-zinc-800: #262626;
-    --color-zinc-900: #171717;
-    --color-zinc-950: #0a0a0a;
+    /* === Blue Palette — SIE Dashboard === */
+  --color-navy-950: #0a1a3c;
+  --color-navy-900: #0f2557;
+  --color-royal-700: #1d4ed8;
+  --color-royal-600: #2563eb;
+  --color-blue-500: #3b82f6;
+  --color-sky-400: #38bdf8;
+  --color-sky-300: #7dd3fc;
+  --color-slateblue-500: #5b6fd8;
+  --color-surface-blue: #eef4ff;
 
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
