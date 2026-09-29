@@ -10,7 +10,10 @@
             </p>
         </div>
 
-        <!-- Komponen Livewire Utama -->
+        <!-- Tag Livewire Sesuai Perintah 2.5 -->
+        <livewire:dashboard.metrics-cards />
+
+        <!-- Komponen Utama Analytics -->
         @livewire('dashboard-analytics')
     </div>
 </x-layouts::app>
