@@ -10,8 +10,18 @@
             </p>
         </div>
 
-        <!-- Tag Livewire Sesuai Perintah 2.5 -->
-        <livewire:dashboard.metrics-cards />
+    {{-- Metrics Cards (Tahap 2) --}}
+    <livewire:dashboard.metrics-cards />
+
+    {{-- Charts Section (Tahap 3) --}}
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div class="lg:col-span-2">
+            <livewire:dashboard.trend-chart />
+        </div>
+        <div class="lg:col-span-1">
+            <livewire:dashboard.operator-chart />
+        </div>
+    </div>
 
         <!-- Komponen Utama Analytics -->
         @livewire('dashboard-analytics')
