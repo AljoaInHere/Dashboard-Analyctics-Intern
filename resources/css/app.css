@@ -22,16 +22,16 @@
   --color-slateblue-500: #5b6fd8;
   --color-surface-blue: #eef4ff;
 
-    --color-accent: var(--color-neutral-800);
-    --color-accent-content: var(--color-neutral-800);
+    --color-accent: var(--color-royal-600);
+    --color-accent-content: var(--color-royal-600);
     --color-accent-foreground: var(--color-white);
 }
 
 @layer theme {
     .dark {
-        --color-accent: var(--color-white);
-        --color-accent-content: var(--color-white);
-        --color-accent-foreground: var(--color-neutral-800);
+        --color-accent: var(--color-blue-500);
+        --color-accent-content: var(--color-sky-400);
+        --color-accent-foreground: var(--color-white);
     }
 }
 

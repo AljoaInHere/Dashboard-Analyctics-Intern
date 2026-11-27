@@ -8,7 +8,7 @@ test('guests are redirected to the login page', function () {
     $response->assertRedirect(route('login'));
 });
 
-test('users without eksekutif role cannot visit dashboard', function () {
+test('users without a recognized role cannot visit dashboard', function () {
     $user = User::factory()->create([
         'email_verified_at' => now(),
     ]);
@@ -19,8 +19,8 @@ test('users without eksekutif role cannot visit dashboard', function () {
     $response->assertForbidden();
 });
 
-test('verified users with eksekutif role can visit the dashboard', function () {
-    $role = Role::firstOrCreate(['name' => 'eksekutif', 'guard_name' => 'web']);
+test('verified users with pengguna-umum, eksekutif, or admin-it role can visit the dashboard', function (string $roleName) {
+    $role = Role::firstOrCreate(['name' => $roleName, 'guard_name' => 'web']);
 
     $user = User::factory()->create([
         'email_verified_at' => now(),
@@ -31,4 +31,4 @@ test('verified users with eksekutif role can visit the dashboard', function () {
 
     $response = $this->get(route('dashboard'));
     $response->assertOk();
-});
+})->with(['pengguna-umum', 'eksekutif', 'admin-it']);
